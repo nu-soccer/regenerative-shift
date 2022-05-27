@@ -1,0 +1,242 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("fonts/Inter.ttf") format("truetype");
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+/* Navigation Menu */
+.nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: whitesmoke;
+  }
+  
+.nav_link {
+    text-decoration: none;
+    padding: 0.8em 1.2em;
+    font-size: 1vw;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+.nav_link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+
+  }
+  
+.nav_link:hover::after {
+    width: 100%;
+    background: olivedrab;
+  }
+
+ /* Raymond James Stadium bamboo fence video. */
+.videos {
+    text-align: center;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: whitesmoke;
+}
+
+.home {
+    font-family: 'Inter', sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* .home .hero {
+    min-height: 320px;
+    background-image: url("/images/moon.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 35%;
+    margin-bottom: 4em;
+} */
+
+.hero #logo {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#logo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.home .hero header {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.home .hero h1 {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    text-indent: 1.5em;
+    letter-spacing: 1.6em;
+    margin-bottom: 0;
+}
+
+.home h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+@media (max-width: 500px) {
+    .home .hero {
+        min-height: 220px;
+    }
+
+    .home .hero h1 {
+        font-size: 2.4em;
+        text-indent: 1.2em;
+        letter-spacing: 1.2em;
+    }
+
+    .home .hero h2 {
+        font-size: 0.8em;
+    }
+}
+
+.home .button {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home .button a {
+    color: black;
+    text-decoration: none;
+    padding: 0.4em 1.2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-indent: 0.4em;
+    letter-spacing: 0.4em;
+    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    font-size: 0.9em;
+}
+
+.home .button a:hover {
+    border: 1px solid olivedrab;
+    box-shadow: 3px 3px olivedrab;
+    /* text-shadow: 1px 1px olivedrab; */
+    border-radius: 0px;
+    width: 100%;
+}
+
+.home article {
+    margin: 3em auto;
+    clear: both;
+    content: " ";
+    display: table;
+    padding: 5%;
+}
+
+.home section {
+    float: left;
+    width: 33%;
+    padding-right: 3%;
+}
+
+.home p {
+    line-height: 1.6em;
+}
+
+@media (max-width: 720px) {
+    .home section {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+.home header {
+    text-align: center;
+}
+
+
+@media (max-width: 500px) {
+    .nav .container {
+        padding: 0.6em 0;
+    }
+
+    .nav_link {
+        padding: 0.6em 1em;
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav .container {
+        padding: 0.4em 0;
+    }
+
+    .nav_link {
+        padding: 0.4em 0.8em;
+        font-size: 0.5em;
+    }
+}
+
+footer {
+    /* text-align: center; */
+}
