@@ -1,0 +1,6 @@
+Home page banner: 1920x680
+
+Lots of text is this color: 767d85
+Lots of text is this color: 6ba9bf
+
+"Get started" button on the home page color: f6755e, changed to: 33aa33.
